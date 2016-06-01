@@ -4,7 +4,8 @@
   "description": "Timestamp",
   "main": "server.js",
   "dependencies": {
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "useragent": "^2.1.9"
   },
   "devDependencies": {},
   "scripts": {
