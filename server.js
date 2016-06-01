@@ -12,7 +12,7 @@ app.all("*", function(req, response, next) {
                         req.socket.remoteAddress ||
                         req.connection.socket.remoteAddress,
         "language":req.headers["accept-language"],
-        "Operating System":agent.os.toString()}));
+        "Operating System":agent.os.toString().replace(agent.os.toVersion(),"")}));
     next();
 });
 http.createServer(app);
